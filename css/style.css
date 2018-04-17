@@ -3798,12 +3798,14 @@ input:focus {
 
 .container-major__num1 {
   top: 159px;
-  content: '01.';
 }
 
 .container-major__num2 {
   top: 585px;
-  content: '02.';
+}
+
+.container-major__num3 {
+  top: 1127px;
 }
 
 body {
@@ -4066,10 +4068,15 @@ body {
   letter-spacing: 2px;
 }
 
+.fashion-figure__figcaption_text-end {
+  display: none;
+}
+
 .fashion-figure__figcaption_text {
   font-size: 0.875rem;
   color: #000000;
   padding-top: 0.9375rem;
+  line-height: 1.6;
 }
 
 .fashion-figure__button {
@@ -4090,6 +4097,82 @@ body {
 }
 
 .fashion-figure__button:active {
+  background: #3f3e3e;
+  color: #ffffff;
+}
+
+.container-portrait {
+  margin-top: 9.75rem;
+  position: relative;
+}
+
+.portrait-figure {
+  max-width: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-portrait-figure__img {
+  margin: 0 auto;
+  max-width: 252px;
+  height: 273px;
+}
+
+.portrait-figure__figcaption_title {
+  position: absolute;
+  top: -2.6875rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 300;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.portrait-figure__figcaption_title::after {
+  position: absolute;
+  top: -20px;
+  left: -43px;
+  content: 'Portrait';
+  font-weight: 600;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: rgba(241, 241, 241, 0.8);
+  z-index: -1;
+  letter-spacing: 2px;
+}
+
+.portrait-figure__figcaption_text-end {
+  display: none;
+}
+
+.portrait-figure__figcaption_text {
+  font-size: 0.875rem;
+  color: #000000;
+  padding-top: 0.9375rem;
+  line-height: 1.6;
+}
+
+.portrait-figure__button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.125rem;
+  padding: 1.5625rem 5.75rem;
+  border: 1px solid #000;
+  display: block;
+  max-width: 250px;
+  margin: 0.9375rem auto 0;
+  font-size: 1rem;
+  padding: 1.25rem 0;
+  text-align: center;
+}
+
+.portrait-figure__button:active {
   background: #3f3e3e;
   color: #ffffff;
 }
@@ -4139,6 +4222,9 @@ body {
   }
   .container-major__num2 {
     top: 952px;
+  }
+  .container-major__num3 {
+    top: 1785px;
   }
   .nav-topMenu {
     display: block !important;
@@ -4299,14 +4385,91 @@ body {
     padding-top: 2.5rem;
     padding-left: 1.25rem;
   }
-  .fashion-figure__figcaption_text-second {
-    display: block;
+  .fashion-figure__figcaption_text-ellipsis {
+    display: none;
+  }
+  .fashion-figure__figcaption_text-end {
+    display: inline;
   }
   .fashion-figure__button {
     position: absolute;
     display: inline-block;
     bottom: 124px;
     right: 94px;
+    max-width: 260px;
+    width: 260px;
+    padding: 1.5625rem 0;
+  }
+  .container-portrait {
+    max-width: 46.75rem;
+    margin: 16.25rem auto 0;
+  }
+  .portrait-figure {
+    max-width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+  .container-portrait-figure__img {
+    margin: 0 40px 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: calc(100% - 40px);
+    height: 38.4375rem;
+  }
+  .portrait-figure__img {
+    -ms-flex-basis: 23.25rem;
+    -ms-flex-preferred-size: 23.25rem;
+        flex-basis: 23.25rem;
+    display: block;
+    background: url("../img/tablet_portrait.jpg") no-repeat;
+    width: 23.25rem;
+    height: 38.4375rem;
+    padding-left: 23.25rem;
+  }
+  .portrait-figure__figcaption {
+    width: 100%;
+  }
+  .portrait-figure__figcaption_title {
+    position: absolute;
+    top: 121px;
+    left: 14px;
+    -webkit-transform: none;
+            transform: none;
+    font-weight: 300;
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    letter-spacing: 5.5px;
+    text-align: left;
+  }
+  .portrait-figure__figcaption_title::after {
+    position: absolute;
+    top: -109px;
+    left: -6px;
+    font-size: 9.375rem;
+    font-weight: 400;
+  }
+  .portrait-figure__figcaption_text {
+    position: relative;
+    top: 221px;
+    left: 50px;
+  }
+  .portrait-figure__figcaption_text-ellipsis {
+    display: none;
+  }
+  .portrait-figure__figcaption_text-end {
+    display: inline;
+  }
+  .portrait-figure__button {
+    position: absolute;
+    display: inline-block;
+    bottom: 193px;
+    left: 51px;
     max-width: 260px;
     width: 260px;
     padding: 1.5625rem 0;
@@ -4322,7 +4485,10 @@ body {
     top: 438px;
   }
   .container-major__num2 {
-    top: 1217px;
+    top: 1266px;
+  }
+  .container-major__num3 {
+    top: 2185px;
   }
   .container-major::before {
     width: calc(100% - 60px);
@@ -4364,12 +4530,14 @@ body {
     margin: 7.5rem auto 0;
   }
   .fashion-figure__figcaption_title {
+    font-size: 100px;
     top: 92px;
-    left: -203px;
+    left: -156px;
   }
   .fashion-figure__figcaption_title::after {
+    font-size: 200px;
     top: 130px;
-    left: 85px;
+    left: 7px;
   }
   .fashion-figure__figcaption_text {
     max-width: 380px;
@@ -4394,12 +4562,107 @@ body {
   .fashion-figure__button {
     position: absolute;
     display: inline-block;
-    bottom: 435px;
+    bottom: 385px;
     right: 252px;
     max-width: 260px;
     width: 260px;
     padding: 1.6875rem 0;
   }
+  .fashion-figure__button:hover {
+    background: #6c6b6b;
+    color: #ffffff;
+  }
+  .fashion-figure__button:active {
+    background: #3f3e3e;
+    color: #ffffff;
+  }
+  .container-portrait {
+    max-width: 80rem;
+    margin: 160px auto 0;
+  }
+  .container-portrait-figure__img {
+    margin: 0 60px 0;
+  }
+  .portrait-figure__img {
+    -ms-flex-basis: 36.5rem;
+    -ms-flex-preferred-size: 36.5rem;
+        flex-basis: 36.5rem;
+    display: block;
+    background: url("../img/pc_portrait.jpg") no-repeat;
+    width: 36.5rem;
+    height: 46.9375rem;
+    padding-left: 36.5rem;
+  }
+  .portrait-figure__figcaption_title {
+    font-size: 100px;
+    top: 101px;
+    left: 157px;
+  }
+  .portrait-figure__figcaption_title::after {
+    font-size: 200px;
+    top: -94px;
+    left: -296px;
+  }
+  .portrait-figure__figcaption_text {
+    top: 221px;
+    left: 165px;
+  }
+  .portrait-figure__button {
+    left: 165px;
+  }
+  .portrait-figure__button:hover {
+    background: #6c6b6b;
+    color: #ffffff;
+  }
+  .portrait-figure__button:active {
+    background: #3f3e3e;
+    color: #ffffff;
+  }
+  /* .fashion-figure__figcaption_title {
+    top: 92px;
+    left: -203px;
+    &::after {
+        top: 130px;
+        left: 85px;
+    }
+}
+
+.fashion-figure__figcaption_text {
+    max-width: 380px;
+    padding-top: rem(110px);
+    padding-left: rem(128px);
+}
+
+.container-fashion-figure__img {
+    width: rem(639px);
+    max-width: rem(639px);
+    height: rem(1011px);
+}
+
+.fashion-figure__img {
+    @include flex-basis(rem(639px)); //justify-self: start;
+    display: block;
+    background: url('../img/pc_fashion.jpg') no-repeat;
+    width: rem(639px);
+    height: rem(1011px);
+    padding-left: rem(639px);
+}
+
+.fashion-figure__button {
+    position: absolute;
+    display: inline-block;
+    bottom: 435px;
+    right: 252px;
+    max-width: 260px;
+    width: 260px;
+    padding: rem(27px) 0;
+    &:hover {
+        @include whiteButtonHover;
+    }
+    &:active {
+        @include whiteButtonActive;
+    }
+} */
   .footMenu__item__socialIcons {
     display: -webkit-box;
     display: -ms-flexbox;
