@@ -4815,6 +4815,17 @@ body {
   .events-figure__button {
     bottom: 187px;
     right: 254px;
+    max-width: 260px;
+    width: 260px;
+    padding: 1.6875rem 0;
+  }
+  .events-figure__button:hover {
+    background: #6c6b6b;
+    color: #ffffff;
+  }
+  .events-figure__button:active {
+    background: #3f3e3e;
+    color: #ffffff;
   }
   .footMenu__item__socialIcons {
     display: -webkit-box;
