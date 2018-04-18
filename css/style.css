@@ -4844,7 +4844,7 @@ body {
             flex-direction: column;
   }
   .pageCover__svglink:not(:last-of-type) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .pageCover__svg-icon {
     max-width: 1.5625rem;
