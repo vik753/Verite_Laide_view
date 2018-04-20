@@ -1743,7 +1743,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     };
 }(jQuery);
 //# sourceMappingURL=jquery.viewportchecker.min.js.map
-//=============Header Menu===============
+//= ============Header Menu===============
 
 console.log('Hello 333');
 var scroll = new SmoothScroll('a[href*="#"]');
@@ -1785,14 +1785,18 @@ function mobTopMenuClose() {
 }
 
 // ============Portfolio-galary=====================
+var $portfolioGallery = $('.portfolio__gallery');
 
-var $portfolioGallery = $('.portfolio__gallery').isotope({
-    itemSelector: '.portfolio__img',
-    horizontalOrder: true,
-    layoutMode: 'masonry',
-    masonry: {
-        gutter: '.gutter-sizer'
-    }
+$('.portfolio__gallery').imagesLoaded(function () {
+    $portfolioGallery.isotope({
+        itemSelector: '.portfolio__img',
+        horizontalOrder: true,
+        layoutMode: 'masonry',
+        filter: '.portfolio__img', // start filter
+        masonry: {
+            gutter: '.gutter-sizer'
+        }
+    });
 });
 
 $('.galleryBlock__btn').click(function () {
@@ -1803,7 +1807,7 @@ $('.galleryBlock__btn').click(function () {
     });
 });
 
-//=======================Media for js
+//= ======================Media for js
 
 /* function initTablet() {
   device = 'tablet';
@@ -1861,7 +1865,7 @@ ssm.addState({
   });
 }); */
 
-//=================BX-Slider====================
+//= ================BX-Slider====================
 /*  //Initialize the slider
 $(document).ready(function() {
   $('.testimonials_slider').bxSlider({
@@ -1872,7 +1876,7 @@ $(document).ready(function() {
   });
 }); */
 
-//========Google-Maps==============
+//= =======Google-Maps==============
 /* var map;
 const cnt = {
   lat: 46.485878,
@@ -1898,7 +1902,7 @@ function initMap() {
   })
 } */
 
-//========================Animation========
+//= =======================Animation========
 
 /* jQuery(document).ready(function() {
   jQuery('.container-header').addClass("hidden").viewportChecker({

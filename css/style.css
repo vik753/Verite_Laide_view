@@ -4442,9 +4442,45 @@ body {
   font-size: 1.125rem;
 }
 
+.portfolioPage-header__title {
+  font-weight: 600;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
 .container-portfolioPage__galleryBlock {
   margin: 1rem auto;
   width: 100%;
+  position: relative;
+}
+
+.container-portfolioPage__galleryBlock_goTop {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  z-index: 5;
+  opacity: 0.5;
+}
+
+.container-portfolioPage__galleryBlock_goTop a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background: #000;
 }
 
 .portfolio__img {
@@ -4916,6 +4952,9 @@ body {
     width: calc(33% - 3px);
     max-width: 100%;
   }
+  .portfolioPage-header__title {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -4944,16 +4983,20 @@ body {
     top: 48px;
   }
   .topMenu__link,
-  .footMenu__link,
   .footMenu__svglink {
-    -webkit-transition: 0.7s ease;
-    transition: 0.7s ease;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
   }
   .topMenu__link:hover,
-  .footMenu__link:hover,
   .footMenu__svglink:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  .footMenu__link:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 2px 2px 5px black;
   }
   .topMenu__link_facebook_svg-icon:hover,
   .topMenu__link_instagram_svg-icon:hover,
@@ -5253,5 +5296,46 @@ body {
   .portfolio__img {
     width: calc(25% - 8px);
     max-width: 100%;
+  }
+  .portfolioPage-header__link-home:hover,
+  .galleryBlock__btn:hover {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  .portfolio__img:hover {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 2;
+  }
+  .container-portfolioPage__galleryBlock_goTop a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.8;
+  }
+  .container-portfolioPage__galleryBlock_goTop a:hover {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }

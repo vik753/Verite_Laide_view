@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head id="topHead">
   <title>VERITE LAIDE portfolio</title>
   <link rel="icon" type="image/png" href="img/IMG-FILE">
   <meta charset="UTF-8">
@@ -13,11 +13,13 @@
 <div class="portfolioPage-mainContainer">
     <header class="portfolioPage-header">
       <a href="index.html" class="portfolioPage-header__link-home">Home</a>
-      </header>
+      <h1 class="portfolioPage-header__title" >Portfolio</h1>
+    </header>
+
       <main class="portfolioPage-main">
           <div class="container-portfolioPage__galleryBlock">
               <nav class="galleryBlock__nav">
-                <button class="galleryBlock__btn" data-filter="portfolio__img">All Works</button>
+                <button class="galleryBlock__btn" data-filter="portfolio__img">All works</button>
                 <button class="galleryBlock__btn" data-filter="fashion">Fashion</button>
                 <button class="galleryBlock__btn" data-filter="portrait">Portrait</button>
                 <button class="galleryBlock__btn" data-filter="events">Events</button>
@@ -43,6 +45,7 @@
                 
               </div>
               <!-- /.portfolio__gallery -->
+              <span class="container-portfolioPage__galleryBlock_goTop"><a href="#topHead">^</a></span>
             </div>
             <!-- /.container-portfolio__galleryBlock -->
       </main>
@@ -57,9 +60,8 @@
   <!--jQuery-->
   <script defer src="node_modules/svgxuse/svgxuse.js"></script>
   <!-- SVG usage for IE11 -->
-  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkloMPcNO6WOm_QKHm0TiBWX0oLj2JqQk&callback=initMap" async
-    defer></script> -->
-  <!-- =GMAPS with my key= -->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- imagesLoaded -->
   <script src="js/script.js"></script>
 </body>
 
