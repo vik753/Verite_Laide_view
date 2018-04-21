@@ -4529,18 +4529,15 @@ body {
 }
 
 .portfolioPage-footer {
-  position: fixed;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   background: #363636;
-  opacity: 0.95;
 }
 
 .portfolioPage-footer__text {
