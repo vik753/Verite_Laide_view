@@ -1784,6 +1784,32 @@ function mobTopMenuClose() {
     }, 900);
 }
 
+//= =======Google-Maps==============
+var map;
+var cnt = {
+    lat: 45.462941,
+    lng: 9.207026
+};
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: cnt,
+        zoom: 15
+    });
+    var marker = new google.maps.Marker({
+        position: cnt,
+        map: map,
+        title: '"Vérité Laide" photostudio',
+        icon: 'img/VeriteLaideGmapIco.png'
+    });
+    var infoWindow = new google.maps.InfoWindow({
+        content: '"Vérité Laide" photostudio, Piazza Cinque Giornate, 3, 20100 Milano MI, Italy'
+    });
+    marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+    });
+}
+
 // ============Portfolio-galary=====================
 var $portfolioGallery = $('.portfolio__gallery');
 
@@ -1875,32 +1901,6 @@ $(document).ready(function() {
     controls: false,
   });
 }); */
-
-//= =======Google-Maps==============
-/* var map;
-const cnt = {
-  lat: 46.485878,
-  lng: 30.7399100
-}
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: cnt,
-    zoom: 18
-  });
-  const marker = new google.maps.Marker({
-    position: cnt,
-    map: map,
-    title: 'Cannoli confectionery',
-    icon: 'img/cannoliFav.png'
-  })
-  const infoWindow = new google.maps.InfoWindow({
-    content: 'Cannoli confectionery, Tchaikovsky line 19, Odesa Ukraine'
-  })
-  marker.addListener('click', function() {
-    infoWindow.open(map, marker)
-  })
-} */
 
 //= =======================Animation========
 

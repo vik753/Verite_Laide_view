@@ -6,8 +6,7 @@
   <link rel="icon" type="image/png" href="img/IMG-FILE">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <script src="js/smooth-scroll.min.js"></script> -->
-  <!--=======SmoothScroll======Has to be in start of page=======-->
+ 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -171,19 +170,30 @@
     <!-- ============Contact-form======================= -->
     <div class="container-contact-form">
       <form action="#" class="contact-form" id="contact">
-        <h2 class="contact-form__title">Contact</h2>
-        <input type="text" class="contact-form__input_name" placeholder="NAME">
-        <input type="email" class="contact-form__input_email" placeholder="EMAIL">
-        <input type="button" class="contact-form__input_send" value="Send">
+        <div class="contact-form__context">
+            <h2 class="contact-form__title">Contact</h2>
+            <input type="text" class="contact-form__input_name" placeholder="NAME">
+            <input type="email" class="contact-form__input_email" placeholder="EMAIL">
+            <input type="button" class="contact-form__input_send" value="Send">
+        </div>
+        <!-- /.contact-form__context -->
+        <div class="container-map">
+          <div class="container-map__context">
+              <p class="container-map__address"><b>Address:</b> Piazza Cinque Giornate, 3, 20100 Milano MI, Italy</p>
+              <p class="container-map__address__phone"><b>phone:</b> +39 02 5501 6694</p>
+          </div>
+          <!-- /.container-map__context -->
+          <div class="container-map__gMap" id="map"></div>
+        </div>
+         <!-- /.container-map -->
       </form>
+      
+      <!-- /.container-map -->
     </div>
     <!-- /.container-contact-form -->
     <ul class="footMenu__list">
       <li class="footMenu__item">
         <a href="team.html" class="footMenu__link">Team</a>
-      </li>
-      <li class="footMenu__item">
-        <a href="#" class="footMenu__link">About us</a>
       </li>
       <li class="footMenu__item">
         <a href="#" class="footMenu__link">Home</a>
@@ -215,10 +225,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!--jQuery-->
-  <!-- <script defer src="node_modules/svgxuse/svgxuse.js"></script> -->
+ <!--  <script defer src="node_modules/svgxuse/svgxuse.js"></script> -->
   <!-- SVG usage for IE11 -->
-  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkloMPcNO6WOm_QKHm0TiBWX0oLj2JqQk&callback=initMap" async
-    defer></script> -->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkloMPcNO6WOm_QKHm0TiBWX0oLj2JqQk&callback=initMap" async
+    defer></script>
   <!-- =GMAPS with my key= -->
   <script src="js/script.js"></script>
 </body>
