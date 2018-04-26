@@ -4458,10 +4458,9 @@ body {
   position: relative;
 }
 
-.portfolioPage-header__link-home {
+.portfolioPage-header__link {
   position: absolute;
   top: -10px;
-  right: 50px;
   background: #fff;
   padding: 0 0.2rem;
   text-decoration: none;
@@ -4469,6 +4468,14 @@ body {
   color: #000000;
   text-transform: uppercase;
   font-size: 1.125rem;
+}
+
+.portfolioPage-header__link-home {
+  right: 9.5rem;
+}
+
+.portfolioPage-header__link-homeContact {
+  right: 1rem;
 }
 
 .portfolioPage-header__title {
@@ -4583,10 +4590,24 @@ body {
   font-weight: 600;
 }
 
+.portfolioPage__footMenu_svg-icon {
+  fill: #fff;
+  display: none;
+}
+
 @media only screen and (min-width: 550px) {
   .portfolio__img {
     width: calc(50% - 5px);
     max-width: 100%;
+  }
+  .portfolioPage-header__link-home {
+    right: 13rem;
+  }
+  .portfolioPage-header__link-homeContact {
+    right: 2rem;
+  }
+  .portfolioPage__footMenu_svg-icon {
+    display: inline-block;
   }
 }
 
@@ -5259,13 +5280,25 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
-    -ms-flex-pack: justify;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+  .contact-form__context input:not(:last-of-type) {
+    margin-right: 60px;
+  }
+  @supports (justify-content: flex-start) {
+    .contact-form__context {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
   }
   .contact-form__title {
     font-size: 1.125rem;
     position: absolute;
+    padding-right: 0;
+    margin-right: 0;
     top: -100px;
     left: 517px;
   }
@@ -5306,65 +5339,6 @@ body {
     -webkit-transition: 0.1s ease;
     transition: 0.1s ease;
   }
-  /*
-
-.container-contact-form__inner{
-    @include display(flex);
-    @include flex-direction(column);
-}
-
-.contact-form__title {
-    font-size: rem(18px);
-    position: absolute;
-    top: -45px;
-    left: 517px;
-    &::after {
-        top: 6px;
-        left: -16px;
-        width: 9px;
-        height: 9px;
-    }
-}
-
-.contact-form__input_name,
-.contact-form__input_email {
-    @include inputStyle;
-    margin-bottom: 0;
-    height: 50px;
-    width: 360px;
-    font-size: rem(16px);
-}
-
-.contact-form__input_send {
-    height: 50px;
-    width: 360px;
-    &:hover {
-        @include blackButtonHover;
-    }
-    &:active {
-        @include blackButtonActive;
-    }
-}
-
-.container-map{
-    position: absolute;
-    width: 100%;
-    top: 60px;
-    @include display(flex);
-    @include justify-content(space-between);
-}
-
-.container-map__gMap{
-    position: relative;
-    width:845px;
-    height: 300px;
-    left: 0;
-}
-
-.container-map__context{
-    padding-right: 1rem;
-}
- */
   /* .footer {
     //margin-top: 530px;
 } */
@@ -5391,6 +5365,7 @@ body {
     max-width: 100%;
   }
   .portfolioPage-header__link-home:hover,
+  .portfolioPage-header__link-homeContact:hover,
   .galleryBlock__btn:hover {
     -webkit-transition: 0.1s ease;
     transition: 0.1s ease;
@@ -5430,5 +5405,13 @@ body {
     transition: 0.1s ease;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .portfolioPage__footMenu_svg-icon {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .portfolioPage__footMenu_svg-icon:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
