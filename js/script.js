@@ -1833,6 +1833,18 @@ $('.galleryBlock__btn').click(function () {
     });
 });
 
+// ===================SlickSlider===============
+
+$(document).ready(function () {
+    $('.portfolioPage__slider').slick({
+        infinite: true,
+        speed: 1200,
+        dots: true,
+        arrows: false,
+        autoplay: true
+    });
+});
+
 //= ======================Media for js
 
 /* function initTablet() {
