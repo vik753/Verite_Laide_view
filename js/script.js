@@ -1845,6 +1845,18 @@ $(document).ready(function () {
     });
 });
 
+//= =======================Animation========
+
+$(document).ready(function () {
+    $('.portfolioPage-mainContainer').addClass('hidden').viewportChecker({
+        classToAdd: 'visible animated lightSpeedIn',
+        offset: 100
+    });
+    setTimeout(function () {
+        $('.portfolioPage-mainContainer').removeClass('animated lightSpeedIn');
+    }, 1000); // Delete those classes - to avoid bugs
+});
+
 //= ======================Media for js
 
 /* function initTablet() {
@@ -1911,14 +1923,5 @@ $(document).ready(function() {
     stopAutoOnClick: true,
     pause: 4000,
     controls: false,
-  });
-}); */
-
-//= =======================Animation========
-
-/* jQuery(document).ready(function() {
-  jQuery('.container-header').addClass("hidden").viewportChecker({
-    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
-    offset: 100
   });
 }); */
