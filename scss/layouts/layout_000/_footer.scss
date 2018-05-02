@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+}
+
+.footMenu__list {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footMenu__item {
+    display: none;
+}
+
+.footMenu__item__socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.footMenu__svglink:not(:last-of-type) {
+    margin-right: rem(30px);
+}
+
+.footMenu__svg-icon {
+    max-width: rem(22px);
+    max-height: rem(22px);
+    fill: #000;
+    cursor: pointer;
+}

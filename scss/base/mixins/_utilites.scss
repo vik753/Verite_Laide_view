@@ -1,0 +1,47 @@
+@mixin box-sizing($val) {
+    -webkit-box-sizing: $val;
+    -moz-box-sizing: $val;
+    box-sizing: $val;
+}
+
+@function rem($target, $current:$baseFontSize) {
+    @return ($target / $current) * 1rem;
+}
+
+@mixin noselect() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &_#{$modifier} {
+        @content;
+    }
+}
+
+
+@mixin media($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin font($f, $s, $w: '') {
+    font: #{$w} $s $f;
+}
+
+@mixin fluentImg{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

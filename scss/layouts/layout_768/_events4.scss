@@ -1,0 +1,82 @@
+//min-with:768px
+.container-events {
+    max-width: rem(748px);
+    margin: rem(230px) auto 0;
+    position: relative;
+    padding-bottom: 65px;
+}
+
+.events-figure {
+    max-width: 100%;
+    @include display(flex);
+}
+
+.container-events-figure__img {
+    width: rem(435px);
+    max-width: rem(435px);
+    height: rem(536px);
+}
+
+.events-figure__img {
+    @include flex-basis(rem(435px)); //justify-self: start;
+    display: block;
+    background: url('#{$img}tablet_events.jpg') no-repeat;
+    width: rem(435px);
+    height: rem(536px);
+    padding-left: rem(435px);
+}
+
+.events-figure__figcaption {
+    width: 100%;
+    margin-left: 155px;
+    @supports (margin: auto) {
+        //override IE11 - margin-left: 155px;
+        margin-left:0;
+    }
+}
+
+.events-figure__figcaption_title {
+    position: relative;
+    padding-top: rem(220px);
+    top: -78px;
+    left: -45px;
+    transform: none;
+    font-size: rem(72px); //letter-spacing: 5.5px;
+    &::after {
+        position: absolute;
+        top: 110px;
+        left: -189px;
+        font-size: rem(150px);
+        font-weight: 400;
+    }
+}
+
+.events-figure__figcaption_text {
+    display: inline-block;
+    max-width: 275px;
+    position: relative;
+    top: rem(-53px);
+    left: rem(60px);
+    @supports (left: auto) {
+        //override IE11 - margin-left: 155px;
+        left:20px;
+    }
+}
+
+.events-figure__figcaption_text-ellipsis {
+    display: none;
+}
+
+.events-figure__figcaption_text-end {
+    display: inline;
+}
+
+.events-figure__button {
+    position: absolute;
+    display: inline-block;
+    top: 388px;
+    right: 33px;
+    max-width: 260px;
+    width: 260px;
+    padding: rem(25px) 0;
+}

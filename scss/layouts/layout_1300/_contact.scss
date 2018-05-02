@@ -1,0 +1,64 @@
+//**************min-width:1300px
+
+.container-contact-form {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.contact-form{
+    position: static;
+    width: 1200px;
+    max-width: 1200px;
+   margin: 0 auto;
+}
+
+.contact-form__context {
+    width: 100%;
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    & input:not(:last-of-type){//for stupid IE11
+        margin-right: 60px;
+        
+    }
+    @supports (justify-content: flex-start){
+        justify-content: space-between;
+    }
+}
+
+.contact-form__title {
+    font-size: rem(18px);
+    position: absolute;
+    padding-right: 0;
+    margin-right: 0;
+    top: -100px;
+    left: 517px;
+    &::after {
+        top: 46px;
+        left: -16px;
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.contact-form__input_name,
+.contact-form__input_email {
+    @include inputStyle;
+    margin-bottom: 0;
+    height: 50px;
+    width: 360px;
+    font-size: rem(16px);
+}
+
+.contact-form__input_send {
+    height: 50px;
+    width: 360px;
+    &:hover {
+        @include blackButtonHover;
+    }
+    &:active {
+        @include blackButtonActive;
+    }
+}
+

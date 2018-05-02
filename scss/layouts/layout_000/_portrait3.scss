@@ -1,0 +1,62 @@
+.container-portrait{
+    margin-top: rem(156px);
+    position: relative;
+}
+
+.portrait-figure{
+    max-width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-portrait-figure__img{
+    margin: 0 auto;
+    max-width: 252px;
+    height: 273px;
+}
+
+.portrait-figure__figcaption_title{
+    position: absolute;
+    top: rem(-43px);
+    left: 50%;
+    transform: translateX(-50%);
+    @include headingLarge;
+    font-size: rem(36px);
+    text-align: center;
+    animation-duration: 3s;
+    &::after{
+        position: absolute;
+        top: -20px;
+        left: -43px;
+        content: 'Portrait';
+        @include headingMedium;
+        color: rgba(241, 241, 241,0.8);
+        z-index: -1;
+       letter-spacing: 2px;
+    }
+}
+
+.portrait-figure__figcaption_text-end{
+    display: none;
+}
+
+.portrait-figure__figcaption_text{
+    font-size: rem(14px);
+    color: $blackThemeColor;
+    padding-top: rem(15px);
+    line-height: 1.6;
+    animation-duration: 3s;
+}
+
+.portrait-figure__button{
+    @include whiteButton;
+    display: block;
+    max-width: 250px;
+    margin: rem(15px) auto 0;
+    font-size: rem(16px);
+    padding: rem(20px) 0;
+    text-align: center;
+    &:active{
+        @include whiteButtonActive;
+    }
+}

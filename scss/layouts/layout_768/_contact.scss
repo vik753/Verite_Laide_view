@@ -1,0 +1,33 @@
+.container-contact-form{
+    &::after {
+        position: absolute;
+        content: '';
+    }
+}
+
+.contact-form {
+    position: static;
+    width: 355px;
+    max-width: 355px;
+    margin: 0 auto;
+    bottom: 20px;
+}
+
+.contact-form__title {
+    font-size: rem(16px);
+    &::after {
+        position: absolute;
+        content: '';
+        top: 47px;
+        left: 130px;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+    }
+}
+
+.container-map__gMap{
+    position: relative;
+    height: 300px;
+}

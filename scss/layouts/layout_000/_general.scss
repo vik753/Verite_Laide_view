@@ -1,0 +1,49 @@
+* {
+    @include box-sizing(border-box);
+}
+
+html {
+    font-size: $baseFontSize;
+    font-family: $mainFont;
+}
+
+//==========for Animation================
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+//===========container-major__nums=============
+.container-major__num {
+    position: absolute;
+    right: 11px;
+    font-size: rem(14px);
+    color: $blackThemeColor;
+    font-weight: 400;
+    background: $whiteThemeColor;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.container-major__num1 {
+    top: 159px;
+}
+
+.container-major__num2 {
+    top: 585px;
+}
+
+.container-major__num3 {
+    top: 1127px;
+}
+
+.container-major__num4 {
+    top: 1690px;
+}
+
+.container-major__num5 {
+    top: 2192px;
+}

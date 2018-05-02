@@ -1,0 +1,39 @@
+.nav-topMenu {
+    display: block !important;
+    background: transparent;
+}
+
+.topMenu__list {
+    width: rem(440px);
+    position: absolute;
+    top: rem(9px);
+    right: rem(140px);
+    @include display(flex);
+    @include justify-content(space-between);
+    animation: bounceInLeft 1s;
+}
+
+.topMenu-open__mobIco,
+.topMenu__mobIco,
+.topMenu__item_team,
+.topMenu__item_explore,
+.topMenu__item__socialIcons {
+    display: none;
+}
+
+.topMenu__link {
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    padding: 0 rem(2px);
+    position: relative; //=================
+    &::before {
+        content: '';
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        background: none;
+    }
+}

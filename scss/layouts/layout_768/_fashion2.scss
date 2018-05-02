@@ -1,0 +1,76 @@
+//min-with:768px
+.container-fashion {
+    max-width: rem(748px);
+    margin: rem(185px) auto 0;
+}
+
+.fashion-figure {
+    max-width: 100%;
+    @include display(flex);
+}
+
+.container-fashion-figure__img {
+    width: rem(372px);
+    max-width: rem(372px);
+    height: rem(615px);
+}
+
+.fashion-figure__img {
+    @include flex-basis(rem(372px)); //justify-self: start;
+    display: block;
+    background: url('#{$img}tablet_fashion.jpg') no-repeat;
+    width: rem(372px);
+    height: rem(615px);
+    padding-left: rem(372px);
+}
+
+.fashion-figure__figcaption {
+    width: 100%;
+    margin-left: 155px;
+    @supports (margin: auto) {
+        //override IE11 - margin-left: 155px;
+        margin-left:0;
+    }
+}
+
+.fashion-figure__figcaption_title {
+    position: relative;
+    padding-top: rem(220px);
+    top: 0;
+    left: rem(-54px);
+    transform: none;
+    font-size: rem(72px);
+    letter-spacing: 5.5px;
+    &::after {
+        position: absolute;
+        top: 86px;
+        left: -17px;
+        font-size: rem(150px);
+        font-weight: 400;
+    }
+}
+
+.fashion-figure__figcaption_text {
+    display: inline-block;
+    max-width: 275px;
+    padding-top: rem(40px);
+    margin-left: rem(20px);
+}
+
+.fashion-figure__figcaption_text-ellipsis {
+    display: none;
+}
+
+.fashion-figure__figcaption_text-end {
+    display: inline;
+}
+
+.fashion-figure__button {
+    position: absolute;
+    display: inline-block;
+    bottom: 102px;
+    right: 94px;
+    max-width: 260px;
+    width: 260px;
+    padding: rem(25px) 0;
+}

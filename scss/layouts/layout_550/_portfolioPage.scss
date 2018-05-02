@@ -1,0 +1,23 @@
+.portfolio__img {
+    width: calc(50% - 5px);
+    max-width: 100%;
+}
+
+.portfolioPage-header__link-home {
+    right: 13rem;
+}
+
+.portfolioPage-header__link-homeContact {
+    right: 2rem;
+}
+
+.portfolioPage__footMenu_svg-icon {
+    display: inline-block;
+}
+
+//=========slider==============
+
+.portfolioPage__slider_slide__text{
+    @include headingMedium;
+    top: calc(50% - 30px);
+}

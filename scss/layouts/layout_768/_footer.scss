@@ -1,0 +1,37 @@
+.footer{
+    margin-top: 35px;
+}
+
+.footMenu__list{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    background: $blackBackground;
+    display: flex;
+    @include display(flex);
+    @include justify-content(space-around);
+}
+
+.footMenu__item {
+    display: inline-block;
+}
+
+.footMenu__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: rem(40px) 0;
+}
+
+.footMenu__item__socialIcons{
+    display: none;
+}
+
+//***********Last***
+
+.footMenu__item__socialIcons{
+    display: none;
+}
