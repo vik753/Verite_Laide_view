@@ -4055,6 +4055,8 @@ body {
   text-transform: uppercase;
   font-size: 2.25rem;
   text-align: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .fashion-figure__figcaption_title::after {
@@ -4079,6 +4081,8 @@ body {
   color: #000000;
   padding-top: 0.9375rem;
   line-height: 1.6;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .fashion-figure__button {
@@ -4135,6 +4139,8 @@ body {
   text-transform: uppercase;
   font-size: 2.25rem;
   text-align: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .portrait-figure__figcaption_title::after {
@@ -4159,6 +4165,8 @@ body {
   color: #000000;
   padding-top: 0.9375rem;
   line-height: 1.6;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .portrait-figure__button {
@@ -4216,6 +4224,8 @@ body {
   text-transform: uppercase;
   font-size: 2.25rem;
   text-align: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .events-figure__figcaption_title::after {
@@ -4240,6 +4250,8 @@ body {
   color: #000000;
   padding-top: 0.9375rem;
   line-height: 1.6;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .events-figure__button {
@@ -4685,6 +4697,8 @@ body {
     -ms-flex-pack: justify;
     -webkit-box-pack: justify;
             justify-content: space-between;
+    -webkit-animation: bounceInLeft 1s;
+            animation: bounceInLeft 1s;
   }
   .topMenu-open__mobIco,
   .topMenu__mobIco,
