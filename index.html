@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>VERITE LAIDE</title>
+  <title>Vérité Laide</title>
   <link rel="icon" type="image/png" href="img/IMG-FILE">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,11 @@
 </head>
 
 <body>
+    <div class="mainPage-header__svgLogo-container">
+        <svg class="mainPage-header__svg-logo">
+            <use xlink:href="img/logoVeriteLaide.svg#logoVL"></use>
+        </svg>
+    </div>
   <div class="container-major">
     <span class="container-major__num container-major__num1">01.</span>
     <span class="container-major__num container-major__num2">02.</span>
@@ -39,9 +44,6 @@
           </li>
           <li class="topMenu__item">
             <a href="#contact" class="topMenu__link">Contact</a>
-          </li>
-          <li class="topMenu__item topMenu__item_explore">
-            <a href="#" class="topMenu__link">Explore</a>
           </li>
           <li class="topMenu__item__socialIcons">
             <a href="https://www.facebook.com/" target="_blank" class="topMenu__svglink topMenu__link_facebook" title="Facebook">
@@ -166,12 +168,12 @@
   <footer class="footer">
     <!-- ============Contact-form======================= -->
     <div class="container-contact-form">
-      <form action="#" class="contact-form" id="contact">
+      <form action="send.php" method="post" class="contact-form" id="contact">
         <div class="contact-form__context">
             <h2 class="contact-form__title">Contact</h2>
-            <input type="text" class="contact-form__input_name" placeholder="NAME">
-            <input type="email" class="contact-form__input_email" placeholder="EMAIL">
-            <input type="button" class="contact-form__input_send" value="Send">
+            <input type="text" name="fname" class="contact-form__input_name" placeholder="NAME">
+            <input type="email"  name="mail" class="contact-form__input_email" placeholder="EMAIL">
+            <input type="submit" class="contact-form__input_send" value="Send">
         </div>
         <!-- /.contact-form__context -->
         <div class="container-map">
@@ -196,7 +198,7 @@
         <a href="#" class="footMenu__link">Home</a>
       </li>
       <li class="footMenu__item">
-        <a href="#" class="footMenu__link">Explore</a>
+        <a href="portfolio.html" class="footMenu__link">Portfolio</a>
       </li>
       <li class="footMenu__item__socialIcons">
         <a href="https://www.facebook.com/" target="_blank" class="footMenu__svglink footMenu__link_facebook" title="Facebook">

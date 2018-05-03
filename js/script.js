@@ -1815,12 +1815,12 @@ jQuery(document).ready(function () {
 
   //=======mainPage animation===============
 
-  jQuery('.container-pageCover').addClass("hidden").viewportChecker({
-    classToRemove: 'hidden',
-    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-    offset: 10,
-    removeClassAfterAnimation: true
-  });
+  /*  jQuery('.container-pageCover').addClass("hidden").viewportChecker({
+     classToRemove: 'hidden',
+     classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+     offset: 10,
+     removeClassAfterAnimation: true,
+   }); */
 
   jQuery('.fashion-figure__figcaption_title').addClass("hidden").viewportChecker({
     classToRemove: 'hidden',
@@ -1866,7 +1866,7 @@ jQuery(document).ready(function () {
 
   jQuery('.contact-form').addClass("hidden").viewportChecker({
     classToRemove: 'hidden',
-    classToAdd: 'visible animated lightSpeedIn', // Class to add to the elements when they are visible
+    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
     offset: 10,
     removeClassAfterAnimation: true
   });
@@ -1893,13 +1893,6 @@ jQuery(document).ready(function () {
     offset: 10,
     removeClassAfterAnimation: true
   });
-
-  /*  jQuery('.portfolio__gallery').addClass("hidden").viewportChecker({
-     classToRemove: 'hidden',
-     classToAdd: 'visible animated bounceInUp',
-     //offset: 10,
-     removeClassAfterAnimation: true,
-   }); */
 
   jQuery('.portfolio__img').addClass("hidden").viewportChecker({
     classToRemove: 'hidden',
@@ -1959,12 +1952,12 @@ $(document).ready(function () {
 
 //= ======================Check wieport width
 
-window.onload = function () {
-  deviceWidth = window.innerWidth || document.documentElement.clientWidth;
-  console.log(deviceWidth >= 1300);
+/* window.onload = function () {
+  deviceWidth = (window.innerWidth || document.documentElement.clientWidth);
+  //console.log(deviceWidth >= 1300);
 };
 
 window.addEventListener('resize', function (event) {
-  deviceWidth = window.innerWidth || document.documentElement.clientWidth;
-  console.log(deviceWidth >= 1300);
-}, false);
+  deviceWidth = (window.innerWidth || document.documentElement.clientWidth);
+  //console.log(deviceWidth >= 1300);
+}, false); */

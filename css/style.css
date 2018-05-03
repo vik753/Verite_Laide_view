@@ -3934,10 +3934,36 @@ body {
   padding: 5.9375rem 2.1875rem 0;
 }
 
+@-webkit-keyframes startAnimatinCover {
+  from {
+    visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes startAnimatinCover {
+  from {
+    visibility: hidden;
+  }
+  90% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
 .container-pageCover__inner {
   position: relative;
   max-width: 14.375rem;
   margin: 0 auto;
+  -webkit-animation: startAnimatinCover 6s;
+          animation: startAnimatinCover 6s;
 }
 
 .pageCover__title1 {
@@ -4025,6 +4051,155 @@ body {
 
 .pageCover__item__socialIcons {
   display: none;
+}
+
+@-webkit-keyframes anim2 {
+  0% {
+    visibility: visible;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 10%;
+    height: auto;
+    opacity: 1;
+  }
+  80% {
+    visibility: visible;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 100vw;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    visibility: visible;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 10%;
+    height: auto;
+    opacity: 1;
+  }
+  80% {
+    visibility: visible;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 100vw;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.mainPage-header__svgLogo-container {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 85px;
+  z-index: -1;
+  -webkit-animation: anim2 6s linear;
+          animation: anim2 6s linear;
+  visibility: hidden;
+}
+
+@-webkit-keyframes logoAnimation {
+  from {
+    visibility: visible;
+    opacity: 0;
+    fill: #fff;
+    stroke: #ffa600;
+    stroke-width: 1px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    stroke: #ff0000;
+  }
+  50% {
+    stroke: #2fff00;
+  }
+  65% {
+    stroke: #0008ff;
+  }
+  75% {
+    fill: #fff;
+    stroke: #353535;
+    stroke-width: 1px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 106;
+  }
+  80% {
+    fill: #747170;
+  }
+  90% {
+    stroke-width: 0;
+    opacity: 0.2;
+  }
+  100% {
+    fill: #ffffff00;
+    opacity: 0;
+  }
+}
+
+@keyframes logoAnimation {
+  from {
+    visibility: visible;
+    opacity: 0;
+    fill: #fff;
+    stroke: #ffa600;
+    stroke-width: 1px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    stroke: #ff0000;
+  }
+  50% {
+    stroke: #2fff00;
+  }
+  65% {
+    stroke: #0008ff;
+  }
+  75% {
+    fill: #fff;
+    stroke: #353535;
+    stroke-width: 1px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 106;
+  }
+  80% {
+    fill: #747170;
+  }
+  90% {
+    stroke-width: 0;
+    opacity: 0.2;
+  }
+  100% {
+    fill: #ffffff00;
+    opacity: 0;
+  }
+}
+
+.mainPage-header__svg-logo {
+  fill: #000;
+  width: 100%;
+  height: auto;
+  -webkit-animation: logoAnimation 6s ease-in-out 1;
+          animation: logoAnimation 6s ease-in-out 1;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
 }
 
 .container-fashion {
@@ -4755,6 +4930,9 @@ body {
     font-weight: 400;
     z-index: -1;
   }
+  .mainPage-header__svgLogo-container {
+    top: 300px;
+  }
   .container-fashion {
     max-width: 46.75rem;
     margin: 11.5625rem auto 0;
@@ -5085,21 +5263,14 @@ body {
   .topMenu__list {
     top: 48px;
   }
-  .topMenu__link,
-  .footMenu__svglink {
+  .topMenu__link {
     -webkit-transition: 0.1s ease;
     transition: 0.1s ease;
   }
-  .topMenu__link:hover,
-  .footMenu__svglink:hover {
+  .topMenu__link:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
-  .footMenu__link:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6), 2px 2px 5px black;
   }
   .topMenu__link_facebook_svg-icon:hover,
   .topMenu__link_instagram_svg-icon:hover,
@@ -5158,6 +5329,9 @@ body {
   }
   .pageCover__svg-icon:hover {
     fill: #888888;
+  }
+  .mainPage-header__svgLogo-container {
+    top: 380px;
   }
   .container-fashion {
     max-width: 80rem;
@@ -5418,6 +5592,20 @@ body {
     max-height: 1.375rem;
     fill: #fff;
     cursor: pointer;
+  }
+  .footMenu__svglink {
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  .footMenu__svglink:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  .footMenu__link:hover {
+    -webkit-animation: pulse 0.5s;
+            animation: pulse 0.5s;
+    color: #c0c0c0;
   }
   .portfolioPage-mainContainer {
     max-width: calc(100% - 60px);
