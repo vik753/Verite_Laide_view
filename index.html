@@ -6,16 +6,16 @@
   <link rel="icon" type="image/png" href="img/IMG-FILE">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="mainPage-header__svgLogo-container">
-        <svg class="mainPage-header__svg-logo">
-            <use xlink:href="img/logoVeriteLaide.svg#logoVL"></use>
-        </svg>
-    </div>
+  <div class="mainPage-header__svgLogo-container">
+    <svg class="mainPage-header__svg-logo">
+      <use xlink:href="img/logoVeriteLaide.svg#logoVL"></use>
+    </svg>
+  </div>
   <div class="container-major">
     <span class="container-major__num container-major__num1">01.</span>
     <span class="container-major__num container-major__num2">02.</span>
@@ -115,7 +115,7 @@
             </p>
           </figcaption>
         </figure>
-        <a href="#" class="fashion-figure__button">View more</a>
+        <a href="portfolio.html#galleryBlock__nav" class="fashion-figure__button" id="fashion-figure__button">View more</a>
       </div>
       <!-- /.container-fashion -->
       <!-- ===============container-portrait================ -->
@@ -135,7 +135,7 @@
             </p>
           </figcaption>
         </figure>
-        <a href="#" class="portrait-figure__button">View more</a>
+        <a href="portfolio.html#galleryBlock__nav" class="portrait-figure__button" id="portrait-figure__button">View more</a>
       </div>
       <!-- /.container-portrait -->
       <!-- ===============container-events================ -->
@@ -156,10 +156,9 @@
             </p>
           </figcaption>
         </figure>
-        <a href="#" class="events-figure__button">View more</a>
+        <a href="portfolio.html#galleryBlock__nav" class="events-figure__button" id="events-figure__button">View more</a>
       </div>
       <!-- /.container-events -->
-
     </main>
   </div>
   <!-- /.container-major -->
@@ -170,23 +169,25 @@
     <div class="container-contact-form">
       <form action="send.php" method="post" class="contact-form" id="contact">
         <div class="contact-form__context">
-            <h2 class="contact-form__title">Contact</h2>
-            <input type="text" name="fname" class="contact-form__input_name" placeholder="NAME">
-            <input type="email"  name="mail" class="contact-form__input_email" placeholder="EMAIL">
-            <input type="submit" class="contact-form__input_send" value="Send">
+          <h2 class="contact-form__title">Contact</h2>
+          <input type="text" name="fname" class="contact-form__input_name" placeholder="NAME">
+          <input type="email" name="mail" class="contact-form__input_email" placeholder="EMAIL">
+          <input type="submit" class="contact-form__input_send" value="Send">
         </div>
         <!-- /.contact-form__context -->
         <div class="container-map">
           <div class="container-map__context">
-              <p class="container-map__address"><b>Address:</b> Piazza Cinque Giornate, 3, 20100 Milano MI, Italy</p>
-              <p class="container-map__address__phone"><b>phone:</b> +39 02 5501 6694</p>
+            <p class="container-map__address">
+              <b>Address:</b> Piazza Cinque Giornate, 3, 20100 Milano MI, Italy</p>
+            <p class="container-map__address__phone">
+              <b>phone:</b> +39 02 5501 6694</p>
           </div>
           <!-- /.container-map__context -->
           <div class="container-map__gMap" id="map"></div>
         </div>
-         <!-- /.container-map -->
+        <!-- /.container-map -->
       </form>
-      
+
       <!-- /.container-map -->
     </div>
     <!-- /.container-contact-form -->
@@ -218,15 +219,13 @@
         </a>
       </li>
     </ul>
-    </nav>
-    <!-- /.nav-topMenu -->
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!--jQuery-->
- <!--  <script defer src="node_modules/svgxuse/svgxuse.js"></script> -->
+  <!--  <script defer src="node_modules/svgxuse/svgxuse.js"></script> -->
   <!-- SVG usage for IE11 -->
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkloMPcNO6WOm_QKHm0TiBWX0oLj2JqQk&callback=initMap" async
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkloMPcNO6WOm_QKHm0TiBWX0oLj2JqQk&callback=initMap" async
     defer></script>
   <!-- =GMAPS with my key= -->
   <script src="js/script.js"></script>

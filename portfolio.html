@@ -40,13 +40,13 @@
     </div>
     <!-- /.portfolioPage-slider__container -->
     <div class="container-portfolioPage__galleryBlock">
-      <nav class="galleryBlock__nav">
-        <button class="galleryBlock__btn" data-filter="portfolio__img">All works</button>
-        <button class="galleryBlock__btn" data-filter="fashion">Fashion</button>
-        <button class="galleryBlock__btn" data-filter="portrait">Portrait</button>
-        <button class="galleryBlock__btn" data-filter="events">Events</button>
+      <nav id="galleryBlock__nav" class="galleryBlock__nav">
+        <button class="galleryBlock__btn filterButton" data-filter="portfolio__img">All works</button>
+        <button class="galleryBlock__btn filterButton" data-filter="fashion">Fashion</button>
+        <button class="galleryBlock__btn filterButton" data-filter="portrait">Portrait</button>
+        <button class="galleryBlock__btn filterButton" data-filter="events">Events</button>
       </nav>
-      <div class="portfolio__gallery">
+      <div id="portfolio__gallery" class="portfolio__gallery">
         <div class="gutter-sizer"></div>
         <!--create gutter-->
         <img src="img/portfolio/events1.jpg" alt="portfolio img1" class="portfolio__img events">
