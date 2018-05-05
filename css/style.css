@@ -3962,8 +3962,8 @@ body {
   position: relative;
   max-width: 14.375rem;
   margin: 0 auto;
-  -webkit-animation: startAnimatinCover 6s;
-          animation: startAnimatinCover 6s;
+  -webkit-animation: startAnimatinCover 3s;
+          animation: startAnimatinCover 3s;
 }
 
 .pageCover__title1 {
@@ -4102,8 +4102,8 @@ body {
   left: 0;
   top: 85px;
   z-index: -1;
-  -webkit-animation: anim2 6s linear;
-          animation: anim2 6s linear;
+  -webkit-animation: anim2 3s linear 1;
+          animation: anim2 3s linear 1;
   visibility: hidden;
 }
 
@@ -4195,8 +4195,8 @@ body {
   fill: #000;
   width: 100%;
   height: auto;
-  -webkit-animation: logoAnimation 6s ease-in-out 1;
-          animation: logoAnimation 6s ease-in-out 1;
+  -webkit-animation: logoAnimation 3s ease-in-out 1;
+          animation: logoAnimation 3s ease-in-out 1;
   visibility: hidden;
   opacity: 0;
   z-index: 2;
