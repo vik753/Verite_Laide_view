@@ -1933,6 +1933,42 @@ jQuery(document).ready(function () {
     offset: 80,
     removeClassAfterAnimation: true
   });
+
+  //=======teamPage animation===============
+
+  jQuery('.teamPage-header__link').addClass("hidden").viewportChecker({
+    classToRemove: 'hidden',
+    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+    offset: 10,
+    removeClassAfterAnimation: true
+  });
+
+  jQuery('.teamPage-header__title').addClass("hidden").viewportChecker({
+    classToRemove: 'hidden',
+    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+    offset: 10,
+    removeClassAfterAnimation: true
+  });
+
+  jQuery('.teamPage-header__text-container').addClass("hidden").viewportChecker({
+    classToRemove: 'hidden',
+    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+    offset: 10,
+    removeClassAfterAnimation: true
+  });
+
+  jQuery('.teamPage-block-container').addClass("hidden").viewportChecker({
+    classToRemove: 'hidden',
+    classToAdd: 'visible animated bounceInUp',
+    //offset: 10,
+    removeClassAfterAnimation: true
+  });
+
+  jQuery('.teamPage-footer').viewportChecker({
+    classToAdd: 'animated bounceIn',
+    offset: 80,
+    removeClassAfterAnimation: true
+  });
 });
 
 // ============Portfolio-galary=====================
